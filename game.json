@@ -65,6 +65,88 @@
         "name": "NewSprite",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/explode.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\explode.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Explode2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Explode",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Explode2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Explode2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Explode3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Explode3",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Explode4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Explode4",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Explode5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Explode5",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Explode6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Explode6",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Explode7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Explode7",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Pop.wav",
+        "kind": "audio",
+        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Pickup/coin 157\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.03,\\\"sustainPunch\\\":70,\\\"decay\\\":0.3,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":500,\\\"frequencySweep\\\":0,\\\"frequencyDeltaSweep\\\":0,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"whistle\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":75,\\\"squareDutySweep\\\":-5,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"Pop\"}}",
+        "name": "Pop",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -156,7 +238,23 @@
       },
       "objectsGroups": [],
       "variables": [],
-      "instances": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "NewShapePainterBoard",
+          "persistentUuid": "20e10df2-50a3-4a0d-a6ed-20128107066e",
+          "width": 0,
+          "x": -92,
+          "y": 233,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
       "objects": [
         {
           "assetStoreId": "",
@@ -203,10 +301,10 @@
               "doubleParameters": {
                 "distance": 15,
                 "innerStrength": 3,
-                "outerStrength": 7
+                "outerStrength": 2
               },
               "stringParameters": {
-                "color": "#ffffff"
+                "color": "255;255;255"
               },
               "booleanParameters": {}
             }
@@ -214,7 +312,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "NewSprite",
+              "name": "Default",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -228,8 +326,140 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
+                        "x": 32.15931989924433,
+                        "y": 32.000629722921914
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
                         "x": 0,
                         "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Explode",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Explode",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 32.15931989924433,
+                        "y": 32.000629722921914
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Explode2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 32.15931989924433,
+                        "y": 32.000629722921914
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Explode3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 32.15931989924433,
+                        "y": 32.000629722921914
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Explode4",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 32.15931989924433,
+                        "y": 32.000629722921914
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Explode5",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 32.15931989924433,
+                        "y": 32.000629722921914
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Explode6",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 32.15931989924433,
+                        "y": 32.000629722921914
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Explode7",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 32.15931989924433,
+                        "y": 32.000629722921914
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -247,7 +477,7 @@
         },
         {
           "assetStoreId": "",
-          "name": "NewShapePainter",
+          "name": "NewShapePainterBoard",
           "tags": "",
           "type": "PrimitiveDrawing::Drawer",
           "variables": [],
@@ -316,6 +546,15 @@
                 "=",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "PreloadSound"
+              },
+              "parameters": [
+                "",
+                "Pop"
+              ]
             }
           ],
           "events": [
@@ -358,8 +597,8 @@
                       "parameters": [
                         "",
                         "ball",
-                        "100+ Variable(x)*70",
-                        "20+ Variable(y)*70",
+                        "100+ Variable(x)*75",
+                        "50+ Variable(y)*75",
                         ""
                       ]
                     },
@@ -438,6 +677,11 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ]
         },
@@ -449,138 +693,347 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "ball",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "MouseButtonPressed"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ]
-            },
             {
               "type": {
                 "value": "SceneVariableAsBoolean"
               },
               "parameters": [
-                "SelectionStart",
+                "UpdateBoard",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "SelectedColor",
-                "=",
-                "ball.Variable(ColorID)"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetSceneVariableAsBoolean"
-              },
-              "parameters": [
-                "SelectionStart",
-                "True"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetObjectVariableAsBoolean"
-              },
-              "parameters": [
-                "ball",
-                "Selected",
-                "True"
-              ]
-            },
-            {
-              "type": {
-                "value": "EnableEffect"
-              },
-              "parameters": [
-                "ball",
-                "\"Effect\"",
-                "yes"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "ball",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "MouseButtonPressed"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ]
-            },
-            {
-              "type": {
-                "value": "VarObjet"
-              },
-              "parameters": [
-                "ball",
-                "ColorID",
-                "=",
-                "Variable(SelectedColor)"
               ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "SetObjectVariableAsBoolean"
-              },
-              "parameters": [
-                "ball",
-                "Selected",
-                "True"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "ball",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SelectionStart",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "SelectedColor",
+                    "=",
+                    "ball.Variable(ColorID)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SelectionStart",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ball",
+                    "Selected",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EnableEffect"
+                  },
+                  "parameters": [
+                    "ball",
+                    "\"Effect\"",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "LastX",
+                    "=",
+                    "ball.CenterX()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "LastY",
+                    "=",
+                    "ball.CenterY()"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "EnableEffect"
-              },
-              "parameters": [
-                "ball",
-                "\"Effect\"",
-                "yes"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "ball",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "ball",
+                    "ColorID",
+                    "=",
+                    "Variable(SelectedColor)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ball",
+                    "Selected",
+                    "="
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PrimitiveDrawing::LineV2"
+                  },
+                  "parameters": [
+                    "NewShapePainterBoard",
+                    "Variable(LastX)",
+                    "Variable(LastY)",
+                    "ball.CenterX()",
+                    "ball.CenterY()",
+                    "8"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "LastX",
+                    "=",
+                    "ball.CenterX()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "LastY",
+                    "=",
+                    "ball.CenterY()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ball",
+                    "Selected",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EnableEffect"
+                  },
+                  "parameters": [
+                    "ball",
+                    "\"Effect\"",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Left\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ball",
+                    "Selected",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SelectionStart",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PrimitiveDrawing::Drawer::ClearShapes"
+                  },
+                  "parameters": [
+                    "NewShapePainterBoard"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PickedInstancesCount"
+                      },
+                      "parameters": [
+                        "ball",
+                        ">=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "UpdateBoard",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "ball",
+                        "\"Explode\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "Pop",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PickedInstancesCount"
+                      },
+                      "parameters": [
+                        "ball",
+                        "<",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "ball",
+                        "Selected",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EnableEffect"
+                      },
+                      "parameters": [
+                        "ball",
+                        "\"Effect\"",
+                        "no"
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -592,24 +1045,36 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "MouseButtonFromTextReleased"
+                "value": "SceneVariableAsBoolean"
               },
               "parameters": [
-                "",
-                "\"Left\""
+                "UpdateBoard",
+                "True"
               ]
             },
             {
               "type": {
-                "value": "ObjectVariableAsBoolean"
+                "value": "AnimationName"
               },
               "parameters": [
                 "ball",
-                "Selected",
-                "True"
+                "\"Explode\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimationEnded2"
+              },
+              "parameters": [
+                "ball"
               ]
             }
           ],
@@ -619,7 +1084,66 @@
                 "value": "SetSceneVariableAsBoolean"
               },
               "parameters": [
+                "UpdateBoard",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "AjoutObjConcern"
+              },
+              "parameters": [
+                "",
+                "ball"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
                 "SelectionStart",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "Pop",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "ball",
+                "\"Default\""
+              ]
+            },
+            {
+              "type": {
+                "value": "EnableEffect"
+              },
+              "parameters": [
+                "ball",
+                "\"Effect\"",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "ball",
+                "Selected",
                 "False"
               ]
             }
@@ -630,65 +1154,87 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "PickedInstancesCount"
-                  },
-                  "parameters": [
-                    "ball",
-                    ">=",
-                    "3"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "ball",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "PickedInstancesCount"
-                  },
-                  "parameters": [
-                    "ball",
-                    "<",
-                    "3"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetObjectVariableAsBoolean"
+                    "value": "ObjectVariableAsBoolean"
                   },
                   "parameters": [
                     "ball",
                     "Selected",
-                    ""
+                    "True"
                   ]
-                },
+                }
+              ],
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "value": "EnableEffect"
-                  },
-                  "parameters": [
-                    "ball",
-                    "\"Effect\"",
-                    "no"
-                  ]
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Raycast"
+                      },
+                      "parameters": [
+                        "ball",
+                        "ball.CenterX()",
+                        "ball.CenterY()",
+                        "270",
+                        "10000",
+                        "TargetX",
+                        "TargetY",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": []
                 }
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -715,6 +1261,11 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
